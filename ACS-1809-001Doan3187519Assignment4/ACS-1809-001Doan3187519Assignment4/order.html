@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="wrapper">
+        
+        <header>
+            <h1>Order Online - Restaurant of Dreams</h1>
+        </header>
+
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="form.html">Reservation Form</a></li>
+                <li><a href="pages\menu.html">Menu</a></li>     
+                <li><a href="content.html">About Us</a></li>  
+                
+            </ul>
+            
+        </nav>
+
+        
+            <main>
+            <h3>Place Your Order</h3>
+            <p>Choose your favorite dishes from the menu below. Customize your order and provide delivery details to complete your purchase.</p>
+            <form action="#" method="POST">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Dish</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="dish[]" value="Vietnamese Banh Mi"></td>
+                            <td>Vietnamese Banh Mi</td>
+                            <td>A delicious start to your meal</td>
+                            <td>$8.50</td>
+                            <td><input type="number" name="quantity[]" min="1" max="10" placeholder="0"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="dish[]" value="Italian Bruschetta"></td>
+                            <td>Italian Bruschetta</td>
+                            <td>Fresh and flavorful</td>
+                            <td>$9.95</td>
+                            <td><input type="number" name="quantity[]" min="1" max="10" placeholder="0"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="dish[]" value="Grilled Salmon"></td>
+                            <td>Grilled Salmon</td>
+                            <td>Served with seasonal veggies</td>
+                            <td>$14.50</td>
+                            <td><input type="number" name="quantity[]" min="1" max="10" placeholder="0"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="dish[]" value="Beef Wellington"></td>
+                            <td>Beef Wellington</td>
+                            <td>Classic and comforting</td>
+                            <td>$24.99</td>
+                            <td><input type="number" name="quantity[]" min="1" max="10" placeholder="0"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="dish[]" value="Chocolate Lava Cake"></td>
+                            <td>Chocolate Lava Cake</td>
+                            <td>Rich and gooey chocolate delight</td>
+                            <td>$5.95</td>
+                            <td><input type="number" name="quantity[]" min="1" max="10" placeholder="0"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="dish[]" value="Matcha Tiramisu"></td>
+                            <td>Matcha Tiramisu</td>
+                            <td>A fusion of East and West</td>
+                            <td>$8.95</td>
+                            <td><input type="number" name="quantity[]" min="1" max="10" placeholder="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Delivery Information</h4>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="customer_name" placeholder="Bao Khoa" required>
+                <label for="address">Delivery Address:</label>
+                <input type="text" id="address" name="address" placeholder="123 Main Street" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+                <label for="comments">Special Requests:</label>
+                <textarea id="comments" name="comments" rows="2" placeholder="E.g., No onions, extra sauce"></textarea>
+
+                <button type="submit" class="submit-btn">Place Order</button>
+            </form>
+       
+    </main>
+
+        
+        <div id="extra">
+            <p>Course: Web Development</p>
+            <p>Course #:ACS-1809-001</p>
+            <p>Instructor: Deng</p>
+            <p><a href="mailto:professor&#64;gmail&#46;com">Professor Email</a></p>
+        </div>
+
+        
+        <footer style="color: white;">         
+            <p>&copy; 2024 Restaurant of Dreams. All rights reserved.</p>
+            <p><a href="mailto:doanbaokhoa123&#64;gmail&#46;com">Email Us</a></p> 
+            <p>Explore more about fusion cuisine on <a href="https://www.foodnetwork.com" target="_blank">Food Network</a>.</p>
+            <p><a href="index.html">Back to Home</a></p>
+            <p><small>BaoKhoaDoan | 3187519 | doan-b@webmail.uwinnipeg.ca</small></p>
+        </footer>
+    </div>
+</body>
+</html>

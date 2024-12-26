@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+        table, th, td {
+  border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Reservation Form</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order Online</a></li>         
+                <li><a href="form.html">Reservation Form</a></li>
+                <li><a href="pages\menu.html">Menu</a></li>     
+                <li><a href="content.html">About Us</a></li>           
+            </ul>
+        </nav>
+        
+        <main>
+            <div id="form">
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <th colspan="2">Reservation Form</th>
+                    </tr>
+                    <tr>
+                        <td><label for="first-name">First Name:</label></td>
+                        <td><input type="text" id="first-name" name="first_name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="last-name">Last Name:</label></td>
+                        <td><input type="text" id="last-name" name="last_name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="street-address">Street Address:</label></td>
+                        <td><input type="text" id="street-address" name="street_address" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City:</label></td>
+                        <td><input type="text" id="city" name="city" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="postal-code">Postal Code:</label></td>
+                        <td><input type="text" id="postal-code" name="postal_code" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="username">User Name:</label></td>
+                        <td><input type="text" id="username" name="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email Address:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="tel" id="phone" name="phone_number" required></td>
+                    </tr>
+                    <tr>
+                        <td>How would you like to be contacted?</td>
+                        <td>
+                            <input type="radio" id="contact-text" name="contact_method" value="Text Message">
+                            <label for="contact-text">Text Message</label>
+                            <input type="radio" id="contact-email" name="contact_method" value="Email" checked>
+                            <label for="contact-email">Email</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Which course(s) are you registering?</td>
+                        <td>
+                            <input type="checkbox" id="acs-1805" name="course" value="ACS-1805">
+                            <label for="acs-1805">ACS-1805</label><br>
+                            <input type="checkbox" id="acs-1809" name="course" value="ACS-1809">
+                            <label for="acs-1809">ACS-1809</label><br>
+                            <input type="checkbox" id="acs-1903" name="course" value="ACS-1903">
+                            <label for="acs-1903">ACS-1903</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="payment-method">Payment Method:</label></td>
+                        <td>
+                            <select id="payment-method" name="payment_method" required>
+                                <option value="VISA">VISA</option>
+                                <option value="MasterCard">MasterCard</option>
+                                <option value="AMEX">AMEX</option>
+                                <option value="Debit">Debit</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="special-request">Special Request:</label></td>
+                        <td><textarea id="special-request" name="special_request" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Rate Your Previous Experience:</td>
+                        <td>
+                            0<input type="range" id="experience" name="experience" min="0" max="10" step="1" value="5">10
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="buttons">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        </main>
+    
+    <div id="extra">
+        <p>Course: Web Development</p>
+        <p>Course #:ACS-1809-001</p>
+        <p>Instructor: Deng</p>
+        <p><a href="mailto:professor&#64;gmail&#46;com">Professor Email</a></p>
+    </div>
+
+    <footer style="color: white;">         
+        <p>&copy; 2024 Restaurant of Dreams. All rights reserved.</p>
+        <p><a href="mailto:doanbaokhoa123&#64;gmail&#46;com">Email Us</a></p> 
+        <p>Explore more about fusion cuisine on <a href="https://www.foodnetwork.com" target="_blank">Food Network</a>.</p>
+        <p><a href="index.html">Back to Home</a></p>
+        <p><small>BaoKhoaDoan | 3187519 | doan-b@webmail.uwinnipeg.ca</small></p>
+    </footer>
+    </div>
+</body>
+</html>
